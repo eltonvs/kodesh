@@ -3,6 +3,7 @@
 
 int main() {
     int n, c = 0;
+
     scanf("%i", &n);
 
     while (c < n) {
