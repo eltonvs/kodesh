@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main (){
+int main () {
     int n, temp, soma = 0, cont = 0;
 
     scanf ("%i", &n);
