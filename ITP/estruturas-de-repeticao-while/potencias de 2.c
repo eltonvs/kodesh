@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    unsigned n, c = 0;
+    int n, c = 0;
 
     scanf("%i", &n);
 
