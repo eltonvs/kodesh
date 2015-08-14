@@ -3,37 +3,20 @@
 int main() {
     int x, y, z, aux1, aux2;
 
-    scanf("%i", &x);
-    scanf("%i", &y);
-    scanf("%i", &z);
+    scanf("%i %i %i", &x, &y, &z);
 
-    if (x > y && y > z) {
-        aux1 = x;
-        x = z;
-        z = aux1;
-    }else if (x > y && x > z) {
-        aux1 = x;
-        aux2 = z;
-        x = y;
-        z = aux1;
-        y = aux2;
-    }else if (y > x && x > z) {
-        aux1 = y;
-        aux2 = x;
-        x = z;
-        y = aux2;
-        z = aux1;
-    }else if (y > x && y > z) {
-        aux1 = y;
-        y = z;
-        z = aux1;
-    }else if (z > x && x > y) {
-        aux1 = x;
-        x = y;
-        y = aux1;
-    }
-
-    printf("%i %i %i", x, y, z);
+    if (x > y && y > z)
+        printf("%i %i %i", z, y, x);
+    else if (x > y && x > z)
+        printf("%i %i %i", y, z, x);
+    else if (y > x && x > z)
+        printf("%i %i %i", z, x, y);
+    else if (y > x && y > z)
+        printf("%i %i %i", x, z, y);
+    else if (z > x && x > y)
+        printf("%i %i %i", y, x, z);
+    else
+        printf("%i %i %i", x, y, z);
 
     return 0;
 }
