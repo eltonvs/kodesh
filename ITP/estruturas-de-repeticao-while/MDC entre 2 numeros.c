@@ -1,20 +1,14 @@
 #include <stdio.h>
 
 int main() {
-    int n, n1, n2, mdc, resto = 1;
+    int n1, n2, resto = 1;
 
-    scanf("%i", &n1);
-    scanf("%i", &n2);
+    scanf("%i %i", &n1, &n2);
     
-    while (resto != 0) {
-        resto = n1 % n2;
-        if (resto == 0)
-            mdc = n2;
-        else
-            n1 = n2, n2 = resto;
-    }
+    while (resto != 0)
+        resto = n1 % n2, n1 = n2, n2 = resto;
 
-    printf("%i", mdc);
+    printf("%i", n1);
 
     return 0;
 }
