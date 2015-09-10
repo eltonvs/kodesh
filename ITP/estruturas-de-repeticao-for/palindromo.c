@@ -16,10 +16,7 @@ int main() {
     for (i = digit - 1; i >= 0; i--)
         inv += (d%10) * pow(10, i), d = d /10;
     
-    if (n == inv)
-        printf("S");
-    else
-        printf("N");
+    printf((n == inv) ? "S" : "N");
 
     return 0;
 }
