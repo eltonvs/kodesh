@@ -1,15 +1,17 @@
 #include <stdio.h>
 
 int main() {
-    int n, i, numeros[100], seq;
+    int n, n1, n2, i, seq;
     
     scanf("%i", &n);
     
     for (i = 0; i < n; i++)
-        scanf("%i", &numeros[i]);
-    
-    for (i = 1; i < n; i++)
-        seq = (numeros[i] > numeros [i - 1]) ? 1 : 0;
+        if (i == 0) {
+            scanf("%i", &n1);
+        }else {
+            scanf("%i", &n2);
+            seq = (n2 > n1) ? 1 : 0, n1 = n2;
+        }
     
     printf("%i", seq);
     
