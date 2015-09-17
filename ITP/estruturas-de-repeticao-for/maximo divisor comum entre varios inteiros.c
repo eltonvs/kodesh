@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int n, n1, n2, mdc, resto, i;
+    int n, n1, n2, resto, i;
 
     scanf("%i", &n);
 
@@ -12,12 +12,8 @@ int main() {
             scanf("%i", &n2);
             do {
                 resto = n1 % n2;
-                if (resto == 0)
-                    mdc = n2;
-                else
-                    n1 = n2, n2 = resto;
+                n1 = n2, n2 = resto;
             }while(resto != 0);
-            n1 = mdc;
         }
 
     printf("%i", n1);
