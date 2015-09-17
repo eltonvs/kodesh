@@ -10,10 +10,9 @@ int main() {
             scanf("%i", &n1);
         }else {
             scanf("%i", &n2);
-            do {
-                resto = n1 % n2;
-                n1 = n2, n2 = resto;
-            }while(resto != 0);
+            do
+                resto = n1 % n2, n1 = n2, n2 = resto;
+            while(resto != 0);
         }
 
     printf("%i", n1);
