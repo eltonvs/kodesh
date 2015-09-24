@@ -1,18 +1,12 @@
 #include <stdio.h>
 
 int main() {
-    int n, i, soma = 0, digit = 0, d;
+    int n, soma = 0;
 
     scanf("%i", &n);
-
-    do
-        d = d/10, digit++;
-    while (d != 0);
-
-    d = n;
-
-    for (i = 0; i < digit; i++)
-        soma += d % 10, d = d / 10;
+    
+    while (n != 0)
+        soma += (n%10), n /= 10;
 
     printf("%i", soma);
 
