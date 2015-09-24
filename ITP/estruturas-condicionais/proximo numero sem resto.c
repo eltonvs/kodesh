@@ -1,15 +1,11 @@
 #include <stdio.h>
 
 int main() {
-    int a;
+    int i, j;
 
-    scanf("%i", &a);
+    scanf("%i %i", &i, &j);
 
-    if (a%2 == 0) {
-        printf("%i", 0);
-    } else {
-        printf("%i", 1);
-    }
-    
+    printf("%i", i + j - i%j);
+
     return 0;
 }
