@@ -7,7 +7,6 @@ int main() {
     scanf("%i", &n);
     float p[n];
     for (i = 0; i < n; i++) scanf("%f", &p[i]);
-
     scanf("%i", &k);
     float c[n];
     for (i = 0; i < k; i++) scanf("%f", &c[i]);
