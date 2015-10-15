@@ -1,3 +1,3 @@
-char findChar(int n){
+char findChar(int n) {
     return n + 96;
 }
