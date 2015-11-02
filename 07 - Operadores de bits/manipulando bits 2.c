@@ -4,7 +4,5 @@ unsigned char manip(unsigned char n) {
     if ((n & (1<<4)) == 0)
         n |= (3<<6), n &= (~1);
 
-    n = (n < 128) ? n | 170 : n & 170;
-
-    return n;
+    return (n < 128) ? n | 170 : n & 170;
 }
