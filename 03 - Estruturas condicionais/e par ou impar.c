@@ -5,10 +5,7 @@ int main() {
 
     scanf("%i", &a);
 
-    if (a % 2 == 0)
-        printf("%i", 0);
-    else
-        printf("%i", 1);
-    
+    printf("%i", a%2 ? 1 : 0);
+
     return 0;
 }
