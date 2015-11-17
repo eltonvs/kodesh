@@ -50,7 +50,7 @@ int main() {
                 freq[j] = 0;
     
     for (i = 0; i < 26; i++)
-        if(freq[i] != 0)
+        if(freq[i])
             //Mostra todas as letras que tem freq diferente de 0
             printf("%c", letters[i]);
     
