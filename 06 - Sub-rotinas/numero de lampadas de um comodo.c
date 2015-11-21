@@ -8,9 +8,8 @@ int num_lampadas(int classe, float larg, float prof) {
         pot = 18;
     if (classe == 3)
         pot = 20;
-    while (i <= pot) {
-        i = (n * 60) / (larg * prof);
-        n++;
-    }
+    while (i <= pot)
+        i = (n * 60) / (larg * prof), n++;
+
     return n - 1;
 }
