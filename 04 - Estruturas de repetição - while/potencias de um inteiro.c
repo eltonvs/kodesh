@@ -3,15 +3,14 @@
 int main () {
     int x, n, multiplicador = 1, contador = 0;
 
-    scanf ("%i", &x);
-    scanf ("%i", &n);
+    scanf("%i %i", &x, &n);
 
     while (contador < n){
         multiplicador = x * multiplicador;
         contador++;
     }
 
-    printf ("%i", multiplicador);
+    printf("%i", multiplicador);
 
     return 0;
 }

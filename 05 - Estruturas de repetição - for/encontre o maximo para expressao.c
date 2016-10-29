@@ -3,8 +3,7 @@
 int main() {
     int x, y, m, n, e, m_e = 0, m_x, m_y;
 
-    scanf("%i", &m);
-    scanf("%i", &n);
+    scanf("%i %i", &m, &n);
 
     for (x = 1; x <= m; x++)
         for (y = 1; y <= n; y++) {

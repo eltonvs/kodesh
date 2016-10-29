@@ -8,7 +8,7 @@ int main () {
     while (n > 0)
         soma += n, n--;
 
-    printf ("%i", soma);
+    printf("%i", soma);
 
     return 0;
 }
