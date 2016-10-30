@@ -7,8 +7,7 @@ int main() {
     scanf("%i", &n);
 
     for (i = 0; i < n; i++) {
-        scanf("%f", &x);
-        scanf("%f", &y);
+        scanf("%f %f", &x, &y);
 
         if ((x <= 0 && y <= 0 && (y + x*x + 2*x - 3) <= 0) || (x >= 0 && (y + x*x - 2*x - 3) <= 0))
             cont++;

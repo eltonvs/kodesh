@@ -8,8 +8,7 @@ int fatorial(int n) {
 int main() {
     int n, x, i, cont = 0, s = 0;
 
-    scanf("%i", &x);
-    scanf("%i", &n);
+    scanf("%i %i", &x, &n);
 
     for (i = 1; i <= n; i += 2)
         s = (cont % 2 == 0) ? s + pow(x, i) / fatorial(i) : s - pow(x, i) / fatorial(i), cont++;

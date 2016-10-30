@@ -3,7 +3,7 @@
 int main () {
     int n, temp, diasneve = 0, cont = 0;
 
-    scanf ("%i", &n);
+    scanf("%i", &n);
 
     while (cont < n){
         scanf("%i", &temp);
@@ -12,7 +12,7 @@ int main () {
         cont++;
     }
 
-    printf ("%i", diasneve);
+    printf("%i", diasneve);
 
     return 0;
 }

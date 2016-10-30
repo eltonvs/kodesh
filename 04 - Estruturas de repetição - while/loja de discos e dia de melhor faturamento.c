@@ -10,7 +10,7 @@ int main () {
         dia++;
     }
 
-    printf ("%i %i", mdia, mqtd);
+    printf("%i %i", mdia, mqtd);
 
     return 0;
 }

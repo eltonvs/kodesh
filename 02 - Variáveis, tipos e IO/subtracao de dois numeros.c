@@ -3,8 +3,7 @@
 int main() {
     int a, b;
 
-    scanf("%i", &a);
-    scanf("%i", &b);
+    scanf("%i %i", &a, &b);
 
     printf("%i", a - b);
 

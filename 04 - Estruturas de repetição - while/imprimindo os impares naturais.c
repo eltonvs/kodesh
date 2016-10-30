@@ -3,9 +3,9 @@
 int main () {
     int n, impar = 1, cont = 0;
 
-    scanf ("%i", &n);
+    scanf("%i", &n);
 
-    while (cont < n){
+    while (cont < n) {
         printf("%i ", impar);
         impar += 2, cont++;
     }
